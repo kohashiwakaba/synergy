@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name" translatable="false">Marreply</string>
+    <string name="tab_text_1" translatable="false">뉴스피드</string>
+    <string name="tab_text_2" translatable="false">견적</string>
+    <string name="tab_text_3" translatable="false">커뮤니티</string>
+    <string name="tab_text_4" translatable="false">마이페이지</string>
+    <string name="action_settings" translatable="false">설정</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
