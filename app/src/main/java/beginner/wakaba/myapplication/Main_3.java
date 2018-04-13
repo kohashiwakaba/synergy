@@ -63,6 +63,9 @@ public class Main_3 extends Fragment {
         mc = new ArrayList<>();
         mc.add(new Main_Com(R.drawable.demo_w1,"도어 스튜디오","#도어 #스튜디오 #1세대스튜디오",9));
         mc.add(new Main_Com(R.drawable.demo_w2,"봉 스튜디오","#자연 #야외 #스튜디오 #자연광",31));
+        mc.add(new Main_Com(R.drawable.demo_w3,"SW 스튜디오","#깔끔 #클래식 #모던 #스튜디오",28));
+        mc.add(new Main_Com(R.drawable.demo_w4,"모리스제이 스튜디오","#영화같은 #스튜디오 #연출 #고급스러운 #소품",63));
+        mc.add(new Main_Com(R.drawable.demo_w5,"루미에 스튜디오","#스튜디오 #행복한추억 #러블리",47));
 
         CommAdapter a = new CommAdapter(mc,getContext());
         mR.setAdapter(a);
