@@ -11,8 +11,7 @@
     android:stateListAnimator="@animator/card_lift_touch"
     app:cardCornerRadius="2dp"
     app:cardElevation="2dp"
-    app:cardMaxElevation="8dp"
-    app:cardUseCompatPadding="true">
+    app:cardMaxElevation="8dp">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -53,14 +52,17 @@
 
         <TextView
             android:id="@+id/comm_card_3_hashtag"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
+            android:autoText="false"
             android:text="#치노 #스튜디오 #1세대스튜디오"
             android:textColor="?android:attr/textColorPrimaryInverse"
             android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/imageView6"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView

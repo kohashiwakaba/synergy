@@ -29,7 +29,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ObjViewHolder>
         TextView n8;
         View.OnClickListener cl;
 
-
         ObjViewHolder(View iv){
             super(iv);
             cv = iv.findViewById(R.id.main_card);

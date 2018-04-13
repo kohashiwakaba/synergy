@@ -56,6 +56,8 @@ public class Main_3 extends Fragment {
 
     }
 
+
+
     private void InitComm(){
 
         mc = new ArrayList<>();

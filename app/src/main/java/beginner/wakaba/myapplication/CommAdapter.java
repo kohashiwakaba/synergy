@@ -15,16 +15,14 @@ import java.util.List;
 public class CommAdapter extends RecyclerView.Adapter<CommAdapter.ObjViewHolder> {
 
     Context mc;
-
     public static class ObjViewHolder extends RecyclerView.ViewHolder{
+
         CardView cv;
         ImageView c1;
         TextView c2;
         TextView c3;
         TextView c4;
         View.OnClickListener cl;
-
-
 
         ObjViewHolder(View iv) {
             super(iv);
@@ -49,7 +47,7 @@ public class CommAdapter extends RecyclerView.Adapter<CommAdapter.ObjViewHolder>
         h.c1.setImageResource(n.get(i).c1_bg);
         h.c2.setText(n.get(i).c2_title);
         h.c3.setText(n.get(i).c3_tag);
-        h.c4.setText(n.get(i).c4_comment);
+        h.c4.setText(n.get(i).c4_comment+"");
 
         final String tc = n.get(i).c2_title;
 
@@ -73,7 +71,7 @@ public class CommAdapter extends RecyclerView.Adapter<CommAdapter.ObjViewHolder>
     public ObjViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_main_com, parent, false);
         CommAdapter.ObjViewHolder ov = new CommAdapter.ObjViewHolder(v);
-        return null;
+        return ov;
     }
 
     @Override
