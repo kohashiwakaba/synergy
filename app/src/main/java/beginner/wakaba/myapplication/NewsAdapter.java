@@ -1,6 +1,7 @@
 package beginner.wakaba.myapplication;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -16,6 +17,8 @@ import java.util.List;
 public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ObjViewHolder> {
 
     Context mc;
+
+    public static final String int_i1 = "beginner.wakaba.myapplication";
     public static class ObjViewHolder extends RecyclerView.ViewHolder{
 
         CardView cv;
@@ -66,6 +69,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ObjViewHolder>
 
     @Override
     public void onBindViewHolder(ObjViewHolder h, int i) {
+        final int pos = i;
         h.n1.setImageResource(n.get(i).n_1_thumb);
         h.n2.setText(n.get(i).n_2_cat);
         h.n3.setText(n.get(i).n_3_title);
@@ -78,15 +82,16 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ObjViewHolder>
         h.cl = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 switch (view.getId()){
                     case R.id.news_card_5_heart : {
                         Snackbar.make(view, "좋아요 버튼 테스트", Snackbar.LENGTH_LONG)
                                 .setAction("Action", null).show(); break;
                     }
                     default:{
-                        Snackbar.make(view, "자세히 보기 테스트", Snackbar.LENGTH_LONG)
-                                .setAction("Action", null).show(); break;
+                        Intent in = new Intent(mc.getApplicationContext(),NewsfeedActivity.class);
+                        in.putExtra("news_1_image",n.get(pos).n_6_image);
+                        in.putExtra("news_2_title",n.get(pos).n_3_title);
+                        mc.startActivity(in);
                     }
                 }
 
