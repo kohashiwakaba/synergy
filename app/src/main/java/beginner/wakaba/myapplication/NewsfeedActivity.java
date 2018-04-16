@@ -19,11 +19,14 @@ public class NewsfeedActivity extends AppCompatActivity {
         Intent i = getIntent();
         int tbimage = i.getIntExtra("news_1_image",0);
         String title = i.getStringExtra("news_2_title");
+        String subtitle = i.getStringExtra("news_3_subtitle");
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         ImageView toolbar_i = findViewById(R.id.n_toolbar_image);
         setSupportActionBar(toolbar);
-        setTitle(title);
+        getSupportActionBar().setTitle(title);
+        getSupportActionBar().setSubtitle(subtitle);
+
         toolbar_i.setImageResource(tbimage);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
