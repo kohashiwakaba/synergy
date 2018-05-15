@@ -2,8 +2,10 @@
 <resources>
     <color name="colorPrimary">#ef2f6d</color>
     <color name="colorPrimaryDark">#a7204c</color>
-    <color name="colorAccent">#ff4081</color>
+    <color name="colorAccent">#1de9b6</color>
 
     <color name="white">#ffffff</color>
     <color name="colorRipplePrimary">#f8bbd0</color>
+    <color name="card_empty_dub">#b9ffffff</color>
+    <color name="colorCardEmpty">#c2a7204c</color>
 </resources>

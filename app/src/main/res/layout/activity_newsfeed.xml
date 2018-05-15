@@ -21,6 +21,7 @@
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:statusBarScrim="@android:color/transparent"
             app:toolbarId="@+id/toolbar">
 
 
@@ -50,7 +51,9 @@
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_newsfeed" />
+    <include
+        android:id="@+id/ns_ns_context"
+        layout="@layout/content_newsfeed" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
