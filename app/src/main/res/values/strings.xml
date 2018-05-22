@@ -276,5 +276,14 @@
     <string name="card_calc2">
         "결혼 계획 작성 후\n원하시는 전문가에게 편하게 문의하세요."
     </string>
+    <string name="title_activity_nav_drawer_test">NavDrawerTestActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
